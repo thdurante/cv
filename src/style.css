@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary;
+  }
+
+  a {
+    @apply text-blue-400;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-4xl mx-auto px-8 py-12 bg-primary text-gray-200;
+  }
+
+  .header {
+    @apply text-left mb-12;
+  }
+
+  .header-info {
+    @apply flex flex-col sm:flex-row mb-2 sm:mb-0;
+  }
+
+  .header-info--title {
+    @apply font-bold sm:mr-2 text-white;
+  }
+
+  .header-info--content {
+    @apply font-normal;
+  }
+
+  .section {
+    @apply mb-12;
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold text-white border-b border-dashed border-gray-500 pb-2 mb-4;
+  }
+
+  .timeline {
+    @apply space-y-4;
+  }
+
+  .timeline--title {
+    @apply font-bold text-xl text-white;
+  }
+
+  .timeline--date {
+    @apply block text-sm font-semibold text-gray-400 mb-3;
+  }
+
+  .skills-list {
+    @apply flex flex-wrap gap-2 mt-2;
+  }
+
+  .skill-badge {
+    @apply bg-gray-800 text-gray-100 rounded-full px-3 py-1;
+  }
+
+  .skill-category {
+    @apply mt-4;
+  }
+}
