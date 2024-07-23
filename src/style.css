@@ -10,13 +10,13 @@
   }
 
   a {
-    @apply text-blue-400;
+    @apply text-blue-400 print:text-gray-600 print:underline print:underline-offset-2;
   }
 }
 
 @layer components {
   .container {
-    @apply max-w-4xl mx-auto px-8 py-12 bg-primary text-gray-200;
+    @apply max-w-4xl mx-auto px-8 py-12 bg-primary text-gray-200 print:text-gray-600;
   }
 
   .header {
@@ -28,7 +28,7 @@
   }
 
   .header-info--title {
-    @apply font-bold sm:mr-2 text-white;
+    @apply font-bold sm:mr-2 text-white print:text-gray-600;
   }
 
   .header-info--content {
@@ -40,7 +40,7 @@
   }
 
   .section-title {
-    @apply text-2xl font-semibold text-white border-b border-dashed border-gray-500 pb-2 mb-4;
+    @apply text-2xl font-semibold text-white border-b border-dashed border-gray-500 pb-2 mb-4 print:text-black;
   }
 
   .timeline {
@@ -48,7 +48,7 @@
   }
 
   .timeline--title {
-    @apply font-bold text-xl text-white;
+    @apply font-bold text-xl text-white print:text-gray-600;
   }
 
   .timeline--date {
@@ -60,7 +60,8 @@
   }
 
   .skill-badge {
-    @apply bg-gray-800 text-gray-100 rounded-full px-3 py-1;
+    @apply bg-gray-800 text-gray-100 rounded-full px-3 py-1 print:inline-block print:bg-gray-100 print:text-gray-600;
+    print-color-adjust: exact;
   }
 
   .skill-category {
