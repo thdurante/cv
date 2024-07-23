@@ -67,4 +67,9 @@
   .skill-category {
     @apply mt-4;
   }
+
+  .scroll-top {
+    @apply underline underline-offset-8 text-gray-500 text-xl fixed bottom-10 right-8 px-0 rounded decoration-dashed
+      print:hidden;
+  }
 }

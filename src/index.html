@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiago Durante Pires</title>
 </head>
-<body>
+<body data-controller="scroll-top">
 <div class="container">
   <!-- Header Section -->
   <div class="header">
@@ -181,6 +181,16 @@
       </div>
     </div>
   </div>
+
+  <!-- Scroll Top -->
+  <button
+    title="Top"
+    class="scroll-top hidden"
+    data-scroll-top-target="scrollTopBtn"
+    data-action="click->scroll-top#scrollToTop"
+  >
+    Top ↑
+  </button>
 </div>
 <script type="module" src="/main.js"></script>
 </body>
