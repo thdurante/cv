@@ -1,10 +1,10 @@
 {
-  "name": "thiago-cv",
+  "name": "cv",
   "author": "Thiago Durante Pires",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://thdurante.github.io/cv",
+  "homepage": "https://thdurante.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
